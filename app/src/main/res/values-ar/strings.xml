@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">مواقيت الصلاة</string>
+    <string name="toggle_theme">تبديل الوضع الليلي</string>
+    <string name="action_switch_language">تغيير اللغة</string>
+    <string name="location_permission_required">يتطلب إذن الموقع.</string>
+    <string name="unable_to_get_location">تعذر الحصول على الموقع.</string>
+    <string name="fajr">الفجر</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="gregorian">الميلادي</string>
+    <string name="hijri">الهجري</string>
+    <string name="reset_toast">تمت إعادة تعيين إعدادات التذكير إلى الوضع الافتراضي</string>
+    <string name="reset_title">إعادة الضبط</string>
+    <string name="reset_message">هل أنت متأكد أنك تريد إعادة جميع إعدادات التذكير إلى القيم الافتراضية؟</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="language_english">الإنجليزية</string>
+    <string name="language_arabic">العربية</string>
+</resources>

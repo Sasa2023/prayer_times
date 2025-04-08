@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Times"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/widget_fajr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fajr: --:--" />
+
+    <TextView
+        android:id="@+id/widget_dhuhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhuhr: --:--" />
+
+    <TextView
+        android:id="@+id/widget_asr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asr: --:--" />
+
+    <TextView
+        android:id="@+id/widget_maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maghrib: --:--" />
+
+    <TextView
+        android:id="@+id/widget_isha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isha: --:--" />
+
+</LinearLayout>

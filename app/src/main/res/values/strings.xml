@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Prayer Times</string>
+    <string name="toggle_theme">Toggle Dark Mode</string>
+    <string name="action_switch_language">Switch Language</string>
+    <string name="location_permission_required">Location permission required.</string>
+    <string name="unable_to_get_location">Unable to get location.</string>
+    <string name="fajr">Fajr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="gregorian">Gregorian</string>
+    <string name="hijri">Hijri</string>
+    <string name="reset_toast">Reminder settings reset to default</string>
+    <string name="reset_title">Reset to Default</string>
+    <string name="reset_message">Are you sure you want to reset all reminder settings to their default values?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">Arabic</string>
+</resources>

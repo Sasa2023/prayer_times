@@ -1,0 +1,43 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Check out code
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      # 2) Set up Java 17 (Temurin is the recommended OpenJDK distro)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      # 3) Install Android SDK + build tools
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          api-level: 34          # or 33, depending on your compileSdk/targetSdk
+          build-tools: '34.0.0'  # match your project's buildToolsVersion
+          # List additional components if needed:
+          # components: platforms;android-34,build-tools;34.0.0
+
+      # 4) Build the debug APK
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
+
+      # 5) Upload the debug APK as an artifact
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
